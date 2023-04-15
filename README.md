@@ -3,7 +3,7 @@
 ob_start();
 error_reporting(0);
 
-define('SunnaT Yotube',"6074674133:AAHeiPQdVnfGvDDWl8XBFMKbNtk5N80a1eA");
+define('SunnaTYotube',"6074674133:AAHeiPQdVnfGvDDWl8XBFMKbNtk5N80a1eA");
 $Admin = "5208050021";
 $vipkanal = "SunnaT Youtube"; /*@SunnaYT_bot*/
 $Visacard = "4151680022735987";
@@ -229,7 +229,7 @@ bot('SendMessage',[
 }
 }
 
-if($Ixtiyor == "rasm"){
+if($Islombek == "rasm"){
 $photo = $message->photo;
 $file = $photo[count($photo)-1]->file_id;
 bot('sendMessage',[
@@ -265,7 +265,7 @@ if($data == "on"){
 	bot('SendMessage',[
 	'chat_id'=>$m_save,
 	'text'=>"<b>Foydalanuvchi $m_saved so'm ga to'ldirish bo'yicha yuborgan so'rovingiz qabul qilindi.
-Sizning kanalga qoʻshilish silkangiz: https://t.me/$vipkanal</b>",
+Sizning kanalga qoʻshilish silkangiz: https://https://t.me/SunnatYoutube</b>",
 	'parse_mode'=>'html',
 	]);
 		bot('SendMessage',[
