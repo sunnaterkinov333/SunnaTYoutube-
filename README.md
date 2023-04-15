@@ -3,7 +3,7 @@
 ob_start();
 error_reporting(0);
 
-define('SunnaT Yotube',"6074674133:AAHeiPQdVnfGvDDWl8XBFMKbNtk5N80a1eA");
+define('SunnaTYotube',"6074674133:AAHeiPQdVnfGvDDWl8XBFMKbNtk5N80a1eA");
 $Admin = "5208050021";
 $vipkanal = "SunnaT Youtube"; /*@SunnaYT_bot*/
 $Visacard = "4151680022735987";
@@ -33,7 +33,7 @@ $message = $DasturchiNet->message;
 $cid = $message->chat->id;
 $name = $message->chat->first_name;
 $tx = $message->text;
-$Ixtiyor = file_get_contents("Islombek/$cid.Ixtiyor");
+$Islombek = file_get_contents("Islombek/$cid.Islombek");
 $m_saved = file_get_contents("Islombek/inew.txt");
 $m_save = file_get_contents("Islombek/id.txt");
 $mid = $message->message_id;
@@ -68,7 +68,7 @@ $calluser = $DasturchiNet->callback_query->from->username;
 $surname = $DasturchiNet->callback_query->from->last_name;
 $about = $DasturchiNet->callback_query->from->about;
 $nameuz = "<a href='tg://user?id=$callfrid'>$callname $surname</a>";
-mkdir("Ixtiyor");
+mkdir("Islombek");
 
 if($text == "/start"){
 bot('Sendmessage',[
@@ -174,7 +174,7 @@ if($data == "Visa"){
 	'message_id'=>$mid2,
 	'text'=>"<b>📋 To'lov tizimi:</b> Visa
 
-<b>💳 Hamyon ( yoki karta ):</b> <code>$uzcard</code>
+<b>💳 Hamyon ( yoki karta ):</b> <code>$Visa</code>
 <b>📝 Izoh:</b> <code>$cid2</code>
 <b>💵 1 oylik obuna narxi:</b> <u>50000 so'm</u>
 
@@ -219,7 +219,7 @@ if(is_numeric($text)=="true"){
 	'text'=>"<b>To'lovingizni chek yoki skreenshotini shu yerga yuboring:</b>",
 	'parse_mode'=>'html',
 	]);
-	file_put_contents("Islombek/$cid.Ixtiyor",'rasm');
+	file_put_contents("Islombek/$cid.Islombek",'rasm');
 }else{
 bot('SendMessage',[
 	'chat_id'=>$cid,
@@ -229,7 +229,7 @@ bot('SendMessage',[
 }
 }
 
-if($Ixtiyor == "rasm"){
+if($Islombek == "rasm"){
 $photo = $message->photo;
 $file = $photo[count($photo)-1]->file_id;
 bot('sendMessage',[
@@ -265,7 +265,7 @@ if($data == "on"){
 	bot('SendMessage',[
 	'chat_id'=>$m_save,
 	'text'=>"<b>Foydalanuvchi $m_saved so'm ga to'ldirish bo'yicha yuborgan so'rovingiz qabul qilindi.
-Sizning kanalga qoʻshilish silkangiz: https://t.me/$vipkanal</b>",
+Sizning kanalga qoʻshilish silkangiz: https://https://t.me/SunnatYoutube</b>",
 	'parse_mode'=>'html',
 	]);
 		bot('SendMessage',[
